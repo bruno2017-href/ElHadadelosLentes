@@ -1,0 +1,226 @@
+/* ================================================================
+   SECCIÓN: contacto
+   Dos tarjetas de acción (catálogo + WhatsApp) y barra de garantías.
+
+   BEM:
+     Bloque:     .contacto
+     Elementos:  .contacto__contenedor
+                 .contacto__tarjetas
+                 .contacto__garantias
+
+     Bloque:     .tarjeta-accion
+     Elementos:  .tarjeta-accion__icono
+                 .tarjeta-accion__titulo
+                 .tarjeta-accion__descripcion
+   Modificadores: .tarjeta-accion--morada
+                  .tarjeta-accion--rosa
+
+     Bloque:     .garantia
+     Elementos:  .garantia__icono
+                 .garantia__texto
+   ================================================================ */
+
+/* ================================================================
+   SECCIÓN: ubicacion (Mapa)
+   ================================================================ */
+
+/* ================================================================
+   SECCIÓN: pie (Footer)
+   ================================================================ */
+
+
+/* ----------------------------------------------------------------
+   CONTACTO
+   ---------------------------------------------------------------- */
+
+.contacto {
+  background-color: var(--color-fondo-blanco);
+  padding: var(--espacio-20) 0;
+}
+
+.contacto__contenedor {
+  max-width: var(--ancho-maximo);
+  margin: 0 auto;
+  padding: 0 var(--padding-horizontal);
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-8);
+}
+
+/* --- Dos tarjetas en fila --- */
+.contacto__tarjetas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--espacio-5);
+}
+
+/* ---- Tarjeta de acción ---- */
+.tarjeta-accion {
+  border-radius: var(--radio-2xl);
+  padding: var(--espacio-8) var(--espacio-8);
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-4);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Círculo decorativo de fondo */
+.tarjeta-accion::after {
+  content: '';
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 180px;
+  height: 180px;
+  border-radius: var(--radio-completo);
+  background: rgba(255, 255, 255, 0.07);
+  pointer-events: none;
+}
+
+.tarjeta-accion--morada {
+  background: var(--gradiente-accion-morada);
+}
+
+.tarjeta-accion--rosa {
+  background: var(--gradiente-accion-rosa);
+}
+
+.tarjeta-accion__icono {
+  width: 52px;
+  height: 52px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: var(--radio-xl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-naranja);
+  font-size: var(--tamaño-xl);
+}
+
+.tarjeta-accion__titulo {
+  font-size: var(--tamaño-2xl);
+  font-weight: 800;
+  color: var(--color-texto-blanco);
+}
+
+.tarjeta-accion__descripcion {
+  font-size: var(--tamaño-sm);
+  color: rgba(255, 255, 255, 0.82);
+  line-height: 1.65;
+  flex: 1;
+}
+
+/* --- Barra de garantías --- */
+.contacto__garantias {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--espacio-10);
+  background-color: var(--color-fondo-pagina);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio-2xl);
+  padding: var(--espacio-5) var(--espacio-8);
+  flex-wrap: wrap;
+}
+
+.garantia {
+  display: flex;
+  align-items: center;
+  gap: var(--espacio-2);
+}
+
+.garantia__icono {
+  font-size: var(--tamaño-lg);
+}
+
+.garantia__texto {
+  font-size: var(--tamaño-sm);
+  font-weight: 500;
+  color: var(--color-texto-oscuro);
+}
+
+
+/* ----------------------------------------------------------------
+   UBICACIÓN (MAPA)
+   ---------------------------------------------------------------- */
+
+.ubicacion {
+  background-color: var(--color-fondo-pagina);
+  padding: var(--espacio-16) 0 var(--espacio-20);
+}
+
+.ubicacion__contenedor {
+  max-width: var(--ancho-maximo);
+  margin: 0 auto;
+  padding: 0 var(--padding-horizontal);
+}
+
+.ubicacion__encabezado {
+  text-align: center;
+  margin-bottom: var(--espacio-8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--espacio-4);
+}
+
+.ubicacion__titulo {
+  font-size: var(--tamaño-4xl);
+  font-weight: 800;
+  color: var(--color-texto-oscuro);
+}
+
+.ubicacion__iframe {
+  width: 100%;
+  height: 400px;
+  border-radius: var(--radio-2xl);
+  border: none;
+  box-shadow: var(--sombra-md);
+}
+
+
+/* ----------------------------------------------------------------
+   PIE DE PÁGINA
+   ---------------------------------------------------------------- */
+
+.pie {
+  background: var(--gradiente-hero);
+  padding: var(--espacio-8) 0;
+}
+
+.pie__contenedor {
+  max-width: var(--ancho-maximo);
+  margin: 0 auto;
+  padding: 0 var(--padding-horizontal);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--espacio-6);
+  flex-wrap: wrap;
+}
+
+.pie__logo {
+  display: flex;
+  align-items: center;
+  gap: var(--espacio-3);
+}
+
+.pie__nombre {
+  display: block;
+  font-size: var(--tamaño-base);
+  font-weight: 700;
+  color: var(--color-texto-blanco);
+}
+
+.pie__eslogan {
+  display: block;
+  font-size: var(--tamaño-xs);
+  color: rgba(255, 255, 255, 0.65);
+  font-style: italic;
+}
+
+.pie__derechos {
+  font-size: var(--tamaño-xs);
+  color: rgba(255, 255, 255, 0.55);
+}

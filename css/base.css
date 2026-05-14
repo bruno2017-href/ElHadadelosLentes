@@ -1,0 +1,55 @@
+/* ================================================================
+   BASE — Reset y Estilos Globales
+   Estilos fundamentales que se aplican a toda la página.
+   No modifiques esto a menos que sea necesario a nivel global.
+   ================================================================ */
+
+/* --- Reset universal --- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* --- Desplazamiento suave al hacer clic en anclas (#) --- */
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--fuente-principal);
+  color: var(--color-texto-oscuro);
+  background-color: var(--color-fondo-blanco);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transicion-rapida);
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* ----------------------------------------------------------------
+   Clase utilitaria para centrar y limitar el ancho del contenido.
+   Úsala dentro de cada sección: <div class="contenedor">
+   ---------------------------------------------------------------- */
+.contenedor {
+  max-width: var(--ancho-maximo);
+  margin: 0 auto;
+  padding: 0 var(--padding-horizontal);
+}

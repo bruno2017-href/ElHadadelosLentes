@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="descripcion" content="Distribucion al por menor de lentes oftalmicos graduados en San Luis Potosí, México.">
+  <meta name="autor" content="Bruno Montes">
+  <meta name="keywords" content="lentes, óptica, salud visual, armazones, examen visual, San Luis Potosí" />
+  <link rel="stylesheet" href="./paginas/index.css" />
+  <title>El Hada de los Lentes | Óptica & Estilo Visual</title>
+  <meta name="description" content="Combinamos salud visual, estilo moderno y atención personalizada. Agenda tu examen visual en El Hada de los Lentes." />
+
+  <!-- ===== FUENTES ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&display=swap" rel="stylesheet" />
+
+  <!-- ===== ÍCONOS (Font Awesome 6) ===== -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- ===== CSS — Variables y Base ===== -->
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+
+  <!-- ===== CSS — Componentes reutilizables ===== -->
+  <link rel="stylesheet" href="css/componentes/navegacion.css" />
+  <link rel="stylesheet" href="css/componentes/boton.css" />
+  <link rel="stylesheet" href="css/componentes/insignia.css" />
+
+  <!-- ===== CSS — Secciones =====
+  <link rel="stylesheet" href="css/bloques/inicio.css" />
+  <link rel="stylesheet" href="css/bloques/propuesta.css" />
+  <link rel="stylesheet" href="css/bloques/servicios.css" />
+  <link rel="stylesheet" href="css/bloques/beneficios.css" />
+  <link rel="stylesheet" href="css/bloques/promocion.css" />
+  <link rel="stylesheet" href="css/bloques/testimonios.css" />
+  <link rel="stylesheet" href="css/bloques/contacto-y-pie.css" /> -->
+
+</head>
+
+<body>
+
+  <!-- ============================================================
+       NAVEGACIÓN
+       ============================================================ -->
+  <header class="navegacion">
+    <div class="navegacion__contenedor">
+
+      <!-- Logo -->
+      <a href="#inicio" class="navegacion__logo">
+        <div class="navegacion__logo-icono">
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <div>
+          <span class="navegacion__logo-nombre">El Hada</span>
+          <span class="navegacion__logo-subtitulo">de los Lentes</span>
+        </div>
+      </a>
+
+      <!-- Menú de navegación -->
+      <nav class="navegacion__menu" id="menu-principal" aria-label="Menú principal">
+        <a href="#servicios"   class="navegacion__enlace">Servicios</a>
+        <a href="#beneficios"  class="navegacion__enlace">Beneficios</a>
+        <a href="#testimonios" class="navegacion__enlace">Testimonios</a>
+        <a href="#contacto"    class="navegacion__enlace">Contacto</a>
+      </nav>
+
+      <!-- Botón CTA en la nav -->
+      <a href="#contacto" class="boton boton--cta-nav">
+        <i class="fa-solid fa-star"></i>
+        Agenda tu cita
+      </a>
+
+      <!-- Hamburguesa (visible solo en móvil) -->
+      <button
+        class="navegacion__hamburguesa"
+        id="hamburguesa"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+        aria-controls="menu-principal"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </header>
+
+
+  <!-- ============================================================
+       SECCIÓN: INICIO (Hero)
+       ============================================================ -->
+  <section class="inicio" id="inicio">
+    <div class="inicio__contenedor">
+
+      <!-- Columna izquierda: texto -->
+      <div class="inicio__contenido">
+        <span class="insignia insignia--oscura">
+          <i class="fa-solid fa-sparkles"></i>
+          Óptica &amp; Estilo Visual
+        </span>
+
+        <h1 class="inicio__titulo">
+          El Hada de
+          <span class="inicio__titulo--acento">los<br>Lentes</span>
+        </h1>
+
+        <p class="inicio__eslogan">"La magia de ver bien ✨"</p>
+
+        <p class="inicio__descripcion">
+          Combinamos salud visual, estilo moderno y atención personalizada
+          para que veas el mundo con claridad y con tu propio toque especial.
+        </p>
+
+        <div class="inicio__acciones">
+          <a href="#contacto" class="boton boton--primario">
+            <i class="fa-solid fa-sparkles"></i>
+            Agenda tu examen visual
+          </a>
+          <a href="#servicios" class="boton boton--secundario">
+            Conocer más
+          </a>
+        </div>
+
+        <!-- Estadísticas numéricas -->
+        <div class="inicio__estadisticas">
+          <div class="estadistica">
+            <span class="estadistica__numero">2,500+</span>
+            <span class="estadistica__etiqueta">Clientes felices</span>
+          </div>
+          <div class="estadistica">
+            <span class="estadistica__numero">15+</span>
+            <span class="estadistica__etiqueta">Años de experiencia</span>
+          </div>
+          <div class="estadistica">
+            <span class="estadistica__numero">500+</span>
+            <span class="estadistica__etiqueta">Modelos disponibles</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Columna derecha: imagen -->
+      <div class="inicio__imagen-contenedor">
+        <!--
+          REEMPLAZA el src con la ruta de tu imagen real.
+          Tamaño recomendado: 700×480 px, orientación horizontal.
+        -->
+        <img
+          src="imagenes/armazones-hero.jpg"
+          alt="Colección de armazones El Hada de los Lentes"
+          class="inicio__imagen"
+        />
+        <div class="inicio__imagen-badge">
+          <i class="fa-solid fa-sparkles"></i>
+          <div>
+            <strong>Nueva colección disponible</strong>
+            <span>Armazones para todos los estilos</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Ola de transición hacia la siguiente sección -->
+    <div class="inicio__ola" aria-hidden="true">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#ffffff" />
+      </svg>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SECCIÓN: PROPUESTA DE VALOR
+       ============================================================ -->
+  <section class="propuesta" id="nosotros">
+    <div class="propuesta__contenedor">
+
+      <!-- Columna izquierda: galería de imágenes -->
+      <div class="propuesta__galeria">
+        <div class="propuesta__galeria-fila propuesta__galeria-fila--superior">
+          <!-- REEMPLAZA los src con tus imágenes reales -->
+          <img
+            src="imagenes/optica-estante.jpg"
+            alt="Estante con armazones de colores"
+            class="propuesta__foto propuesta__foto--izquierda"
+          />
+          <img
+            src="imagenes/examen-visual.jpg"
+            alt="Optometrista realizando examen visual"
+            class="propuesta__foto propuesta__foto--derecha"
+          />
+        </div>
+        <div class="propuesta__galeria-fila propuesta__galeria-fila--inferior">
+          <img
+            src="imagenes/mujer-lentes.jpg"
+            alt="Mujer usando lentes con estilo"
+            class="propuesta__foto propuesta__foto--ancha"
+          />
+          <!-- Badge flotante "15+ años" -->
+          <div class="propuesta__galeria-badge">
+            <span class="propuesta__galeria-numero">15+</span>
+            <span class="propuesta__galeria-texto">años cuidando tu visión</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Columna derecha: texto y puntos de valor -->
+      <div class="propuesta__contenido">
+        <span class="insignia insignia--rosa">
+          <i class="fa-solid fa-heart"></i>
+          Nuestra Propuesta de Valor
+        </span>
+
+        <h2 class="propuesta__titulo">
+          Donde la salud visual
+          <span class="propuesta__titulo--acento">se convierte en arte</span>
+        </h2>
+
+        <p class="propuesta__descripcion">
+          En El Hada de los Lentes entendemos que los lentes no son solo un
+          accesorio médico — son una extensión de tu personalidad. Por eso
+          combinamos una atención optométrica de primer nivel con asesoría
+          de moda personalizada.
+        </p>
+
+        <ul class="propuesta__lista">
+          <li class="propuesta__item">
+            <div class="propuesta__item-icono propuesta__item-icono--rosa">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <div class="propuesta__item-texto">
+              <strong>Atención Personalizada</strong>
+              <p>Te acompañamos en cada paso: desde el diagnóstico hasta elegir el marco perfecto para tu rostro y estilo.</p>
+            </div>
+          </li>
+          <li class="propuesta__item">
+            <div class="propuesta__item-icono propuesta__item-icono--amarillo">
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="propuesta__item-texto">
+              <strong>Calidad Garantizada</strong>
+              <p>Trabajamos solo con marcas certificadas y materiales ópticos de alta tecnología.</p>
+            </div>
+          </li>
+          <li class="propuesta__item">
+            <div class="propuesta__item-icono propuesta__item-icono--morado">
+              <i class="fa-solid fa-bolt"></i>
+            </div>
+            <div class="propuesta__item-texto">
+              <strong>Estilo + Salud Visual</strong>
+              <p>Moda y funcionalidad en perfecta armonía. Tu visión, con tu propio toque único.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SECCIÓN: SERVICIOS
+       ============================================================ -->
+  <section class="servicios" id="servicios">
+    <div class="servicios__contenedor">
+
+      <div class="servicios__encabezado">
+        <span class="insignia insignia--morada">
+          <i class="fa-solid fa-sparkles"></i>
+          Nuestros Servicios
+        </span>
+        <h2 class="servicios__titulo">Todo lo que tu visión necesita</h2>
+        <p class="servicios__descripcion">
+          Ofrecemos una experiencia visual completa: desde el diagnóstico
+          hasta encontrar el accesorio perfecto que combina salud y estilo.
+        </p>
+      </div>
+
+      <div class="servicios__cuadricula">
+
+        <!-- Tarjeta 1: Examen Visual -->
+        <div class="tarjeta-servicio">
+          <div class="tarjeta-servicio__encabezado">
+            <div class="tarjeta-servicio__icono">
+              <i class="fa-regular fa-eye"></i>
+            </div>
+            <span class="insignia insignia--recomendado">Recomendado</span>
+          </div>
+          <h3 class="tarjeta-servicio__nombre">Examen Visual Completo</h3>
+          <p class="tarjeta-servicio__descripcion">
+            Evaluación optométrica profesional con tecnología de vanguardia.
+            Detectamos miopía, astigmatismo, hipermetropía y más.
+          </p>
+          <a href="#contacto" class="tarjeta-servicio__enlace">Saber más →</a>
+        </div>
+
+        <!-- Tarjeta 2: Lentes Graduados -->
+        <div class="tarjeta-servicio">
+          <div class="tarjeta-servicio__encabezado">
+            <div class="tarjeta-servicio__icono">
+              <i class="fa-solid fa-glasses"></i>
+            </div>
+          </div>
+          <h3 class="tarjeta-servicio__nombre">Lentes Graduados</h3>
+          <p class="tarjeta-servicio__descripcion">
+            Amplia variedad en lentes monofocales, bifocales y progresivos
+            con los mejores materiales: antirreflejo, fotocromáticos y ultradelgados.
+          </p>
+          <a href="#contacto" class="tarjeta-servicio__enlace">Saber más →</a>
+        </div>
+
+        <!-- Tarjeta 3: Lentes de Protección -->
+        <div class="tarjeta-servicio">
+          <div class="tarjeta-servicio__encabezado">
+            <div class="tarjeta-servicio__icono">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+          </div>
+          <h3 class="tarjeta-servicio__nombre">Lentes de Protección</h3>
+          <p class="tarjeta-servicio__descripcion">
+            Filtros UV, lentes de seguridad industrial, protección para
+            pantallas digitales y lentes deportivos de alta resistencia.
+          </p>
+          <a href="#contacto" class="tarjeta-servicio__enlace">Saber más →</a>
+        </div>
+
+        <!-- Tarjeta 4: Armazones de Diseño -->
+        <div class="tarjeta-servicio">
+          <div class="tarjeta-servicio__encabezado">
+            <div class="tarjeta-servicio__icono tarjeta-servicio__icono--amarillo">
+              <i class="fa-solid fa-sparkles"></i>
+            </div>
+            <span class="insignia insignia--nuevo">Nuevos modelos</span>
+          </div>
+          <h3 class="tarjeta-servicio__nombre">Armazones de Diseño</h3>
+          <p class="tarjeta-servicio__descripcion">
+            Más de 500 modelos de las mejores marcas y diseños exclusivos.
+            Encuentra el armazón que refleja tu personalidad.
+          </p>
+          <a href="#contacto" class="tarjeta-servicio__enlace">Saber más →</a>
+        </div>
+
+        <!-- Tarjeta 5: Promociones Especiales -->
+        <div class="tarjeta-servicio">
+          <div class="tarjeta-servicio__encabezado">
+            <div class="tarjeta-servicio__icono tarjeta-servicio__icono--verde">
+              <i class="fa-solid fa-tag"></i>
+            </div>
+            <span class="insignia insignia--ahorro">Ahorra más</span>
+          </div>
+          <h3 class="tarjeta-servicio__nombre">Promociones Especiales</h3>
+          <p class="tarjeta-servicio__descripcion">
+            Paquetes todo incluido desde precio accesible: examen + armazón
+            + lentes. Descuentos especiales para familias y estudiantes.
+          </p>
+          <a href="#contacto" class="tarjeta-servicio__enlace">Saber más →</a>
+        </div>
+
+        <!-- Tarjeta 6: Planes de Pago -->
+        <div class="tarjeta-servicio">
+          <div class="tarjeta-servicio__encabezado">
+            <div class="tarjeta-servicio__icono tarjeta-servicio__icono--morado">
+              <i class="fa-regular fa-credit-card"></i>
+            </div>
+          </div>
+          <h3 class="tarjeta-servicio__nombre">Planes de Pago Flexibles</h3>
+          <p class="tarjeta-servicio__descripcion">
+            Meses sin intereses, pagos quincenales y facilidades de crédito.
+            Cuida tu visión sin afectar tu bolsillo.
+          </p>
+          <a href="#contacto" class="tarjeta-servicio__enlace">Saber más →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SECCIÓN: BENEFICIOS
+       ============================================================ -->
+  <section class="beneficios" id="beneficios">
+    <div class="beneficios__contenedor">
+
+      <div class="beneficios__encabezado">
+        <span class="insignia insignia--morada">
+          <i class="fa-solid fa-sparkles"></i>
+          Nuestros Beneficios
+        </span>
+        <h2 class="beneficios__titulo">Beneficios que marcan la diferencia</h2>
+        <p class="beneficios__descripcion">
+          Más de 2,500 familias ya confían en nosotros. Descubre por qué somos
+          la óptica favorita de la comunidad.
+        </p>
+      </div>
+
+      <div class="beneficios__cuadricula">
+
+        <div class="tarjeta-beneficio tarjeta-beneficio--rosa">
+          <div class="tarjeta-beneficio__icono"><i class="fa-regular fa-heart"></i></div>
+          <h3 class="tarjeta-beneficio__titulo">Atención Cálida y Personalizada</h3>
+          <p class="tarjeta-beneficio__descripcion">Nuestro equipo te recibe como en casa. Te escuchamos, te asesoramos y encontramos la solución ideal para ti y tu familia.</p>
+        </div>
+
+        <div class="tarjeta-beneficio tarjeta-beneficio--lavanda">
+          <div class="tarjeta-beneficio__icono"><i class="fa-solid fa-layer-group"></i></div>
+          <h3 class="tarjeta-beneficio__titulo">Variedad de Estilos</h3>
+          <p class="tarjeta-beneficio__descripcion">Más de 500 modelos de armazones: clásicos, minimalistas, retro, deportivos y de moda. Siempre encontrarás el tuyo.</p>
+        </div>
+
+        <div class="tarjeta-beneficio tarjeta-beneficio--verde">
+          <div class="tarjeta-beneficio__icono"><i class="fa-solid fa-shield-halved"></i></div>
+          <h3 class="tarjeta-beneficio__titulo">Garantía de Calidad</h3>
+          <p class="tarjeta-beneficio__descripcion">Todos nuestros productos tienen garantía. Si algo falla, lo resolvemos. Tu satisfacción es nuestra prioridad.</p>
+        </div>
+
+        <div class="tarjeta-beneficio tarjeta-beneficio--amarillo">
+          <div class="tarjeta-beneficio__icono"><i class="fa-solid fa-wallet"></i></div>
+          <h3 class="tarjeta-beneficio__titulo">Precios Accesibles</h3>
+          <p class="tarjeta-beneficio__descripcion">Creemos que la salud visual no debe ser un lujo. Ofrecemos paquetes y promociones para todos los presupuestos.</p>
+        </div>
+
+        <div class="tarjeta-beneficio tarjeta-beneficio--azul">
+          <div class="tarjeta-beneficio__icono"><i class="fa-regular fa-clock"></i></div>
+          <h3 class="tarjeta-beneficio__titulo">Rapidez en la Entrega</h3>
+          <p class="tarjeta-beneficio__descripcion">Tus lentes listos en el menor tiempo posible. En muchos casos, entrega el mismo día o en 24 horas.</p>
+        </div>
+
+        <div class="tarjeta-beneficio tarjeta-beneficio--lila">
+          <div class="tarjeta-beneficio__icono"><i class="fa-regular fa-star"></i></div>
+          <h3 class="tarjeta-beneficio__titulo">Optometristas Certificados</h3>
+          <p class="tarjeta-beneficio__descripcion">Nuestros especialistas tienen la preparación y experiencia para darte un diagnóstico preciso y confiable.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SECCIÓN: PROMOCIÓN (Banner CTA)
+       ============================================================ -->
+  <section class="promocion">
+    <div class="promocion__contenedor">
+      <div class="promocion__contenido">
+        <span class="promocion__etiqueta">Oferta especial</span>
+        <h2 class="promocion__titulo">
+          Examen visual + armazón + lentes graduados
+        </h2>
+        <p class="promocion__descripcion">
+          Todo incluido en un solo paquete con precio accesible. Meses sin
+          intereses disponibles. Pregunta por nuestras promociones vigentes.
+        </p>
+        <a href="#contacto" class="boton boton--primario">
+          Aprovechar promoción
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SECCIÓN: TESTIMONIOS
+       ============================================================ -->
+  <section class="testimonios" id="testimonios">
+    <div class="testimonios__contenedor">
+
+      <div class="testimonios__encabezado">
+        <span class="insignia insignia--amarilla">
+          <i class="fa-solid fa-star"></i>
+          Testimonios
+        </span>
+        <h2 class="testimonios__titulo">Lo que dicen nuestros clientes</h2>
+        <p class="testimonios__descripcion">
+          Más de 2,500 personas confían en nosotros. Estas son sus historias.
+        </p>
+        <div class="testimonios__calificacion">
+          <div class="testimonios__estrellas" aria-label="5 estrellas">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <span class="testimonios__puntuacion">4.9/5 (287 reseñas)</span>
+        </div>
+      </div>
+
+      <div class="testimonios__cuadricula">
+
+        <!-- Testimonio 1 -->
+        <div class="tarjeta-testimonio">
+          <div class="tarjeta-testimonio__encabezado">
+            <!--
+              Si tienes foto del cliente, usa <img>.
+              Si no, usa el div con clase --inicial y pon la inicial del nombre.
+            -->
+            <img
+              src="imagenes/avatar-mariana.jpg"
+              alt="Foto de Mariana López"
+              class="tarjeta-testimonio__avatar"
+            />
+            <div class="tarjeta-testimonio__info">
+              <strong class="tarjeta-testimonio__nombre">Mariana López</strong>
+              <span class="tarjeta-testimonio__profesion">Diseñadora gráfica</span>
+            </div>
+            <span class="tarjeta-testimonio__comilla" aria-hidden="true">
+              <i class="fa-solid fa-quote-right"></i>
+            </span>
+          </div>
+          <div class="tarjeta-testimonio__estrellas" aria-label="5 estrellas">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="tarjeta-testimonio__texto">
+            Llevo años buscando unos lentes que me quedaran perfectos y aquí los encontré.
+            La atención fue increíble, me ayudaron a elegir el armazón ideal para mi forma
+            de cara. ¡Son magos!
+          </p>
+        </div>
+
+        <!-- Testimonio 2 -->
+        <div class="tarjeta-testimonio">
+          <div class="tarjeta-testimonio__encabezado">
+            <img
+              src="imagenes/avatar-carlos.jpg"
+              alt="Foto de Carlos Ramírez"
+              class="tarjeta-testimonio__avatar"
+            />
+            <div class="tarjeta-testimonio__info">
+              <strong class="tarjeta-testimonio__nombre">Carlos Ramírez</strong>
+              <span class="tarjeta-testimonio__profesion">Ingeniero de sistemas</span>
+            </div>
+            <span class="tarjeta-testimonio__comilla" aria-hidden="true">
+              <i class="fa-solid fa-quote-right"></i>
+            </span>
+          </div>
+          <div class="tarjeta-testimonio__estrellas" aria-label="5 estrellas">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="tarjeta-testimonio__texto">
+            Mis lentes progresivos son excelentes. El optometrista fue muy detallado en el
+            examen y en explicarme todo. Los entregaron en tiempo récord y el precio fue muy justo.
+          </p>
+        </div>
+
+        <!-- Testimonio 3 (con inicial) -->
+        <div class="tarjeta-testimonio">
+          <div class="tarjeta-testimonio__encabezado">
+            <div class="tarjeta-testimonio__avatar tarjeta-testimonio__avatar--inicial tarjeta-testimonio__avatar--morado"
+                 aria-label="Sofía Mendoza">
+              S
+            </div>
+            <div class="tarjeta-testimonio__info">
+              <strong class="tarjeta-testimonio__nombre">Sofía Mendoza</strong>
+              <span class="tarjeta-testimonio__profesion">Mamá de familia</span>
+            </div>
+            <span class="tarjeta-testimonio__comilla" aria-hidden="true">
+              <i class="fa-solid fa-quote-right"></i>
+            </span>
+          </div>
+          <div class="tarjeta-testimonio__estrellas" aria-label="5 estrellas">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="tarjeta-testimonio__texto">
+            Traje a toda mi familia y atendieron a todos con mucha paciencia. Mis hijos
+            necesitaban lentes y les encontraron opciones bonitas y resistentes. 100% recomendado.
+          </p>
+        </div>
+
+        <!-- Testimonio 4 -->
+        <div class="tarjeta-testimonio">
+          <div class="tarjeta-testimonio__encabezado">
+            <div class="tarjeta-testimonio__avatar tarjeta-testimonio__avatar--inicial tarjeta-testimonio__avatar--rojo"
+                 aria-label="Roberto Vargas">
+              R
+            </div>
+            <div class="tarjeta-testimonio__info">
+              <strong class="tarjeta-testimonio__nombre">Roberto Vargas</strong>
+              <span class="tarjeta-testimonio__profesion">Maestro de primaria</span>
+            </div>
+            <span class="tarjeta-testimonio__comilla" aria-hidden="true">
+              <i class="fa-solid fa-quote-right"></i>
+            </span>
+          </div>
+          <div class="tarjeta-testimonio__estrellas" aria-label="5 estrellas">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="tarjeta-testimonio__texto">
+            Las facilidades de pago me permitieron renovar mis lentes sin preocupaciones.
+            Excelente calidad y el armazón que elegí recibió muchos cumplidos en el trabajo.
+          </p>
+        </div>
+
+        <!-- Testimonio 5 -->
+        <div class="tarjeta-testimonio">
+          <div class="tarjeta-testimonio__encabezado">
+            <div class="tarjeta-testimonio__avatar tarjeta-testimonio__avatar--inicial tarjeta-testimonio__avatar--verde"
+                 aria-label="Andrea Flores">
+              A
+            </div>
+            <div class="tarjeta-testimonio__info">
+              <strong class="tarjeta-testimonio__nombre">Andrea Flores</strong>
+              <span class="tarjeta-testimonio__profesion">Estudiante universitaria</span>
+            </div>
+            <span class="tarjeta-testimonio__comilla" aria-hidden="true">
+              <i class="fa-solid fa-quote-right"></i>
+            </span>
+          </div>
+          <div class="tarjeta-testimonio__estrellas" aria-label="5 estrellas">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="tarjeta-testimonio__texto">
+            Vine por primera vez y quedé enamorada. Los lentes de protección para pantallas
+            han mejorado mucho mi comodidad en clases. El ambiente es muy agradable.
+          </p>
+        </div>
+
+        <!-- Testimonio 6 -->
+        <div class="tarjeta-testimonio">
+          <div class="tarjeta-testimonio__encabezado">
+            <div class="tarjeta-testimonio__avatar tarjeta-testimonio__avatar--inicial tarjeta-testimonio__avatar--naranja"
+                 aria-label="Miguel Torres">
+              M
+            </div>
+            <div class="tarjeta-testimonio__info">
+              <strong class="tarjeta-testimonio__nombre">Miguel Torres</strong>
+              <span class="tarjeta-testimonio__profesion">Contador</span>
+            </div>
+            <span class="tarjeta-testimonio__comilla" aria-hidden="true">
+              <i class="fa-solid fa-quote-right"></i>
+            </span>
+          </div>
+          <div class="tarjeta-testimonio__estrellas" aria-label="5 estrellas">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="tarjeta-testimonio__texto">
+            Servicio profesional de principio a fin. Mi diagnóstico fue preciso y los lentes
+            me llegaron perfectos. Ya recomendé El Hada de los Lentes a todos mis compañeros.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SECCIÓN: CONTACTO
+       ============================================================ -->
+  <section class="contacto" id="contacto">
+    <div class="contacto__contenedor">
+
+      <!-- Dos tarjetas de acción -->
+      <div class="contacto__tarjetas">
+
+        <div class="tarjeta-accion tarjeta-accion--morada">
+          <div class="tarjeta-accion__icono">
+            <i class="fa-solid fa-book-open"></i>
+          </div>
+          <h3 class="tarjeta-accion__titulo">Ver nuestro catálogo</h3>
+          <p class="tarjeta-accion__descripcion">
+            Explora más de 500 modelos de armazones para toda la familia.
+            Tenemos para todos los estilos y edades.
+          </p>
+          <!-- Reemplaza href con el enlace real de tu catálogo -->
+          <a href="#" class="boton boton--catalogo">
+            <i class="fa-solid fa-book-open"></i>
+            Ver catálogo completo
+          </a>
+        </div>
+
+        <div class="tarjeta-accion tarjeta-accion--rosa">
+          <div class="tarjeta-accion__icono">
+            <i class="fa-solid fa-comment"></i>
+          </div>
+          <h3 class="tarjeta-accion__titulo">Contáctanos ahora</h3>
+          <p class="tarjeta-accion__descripcion">
+            Respondemos en minutos por WhatsApp. Agenda tu cita, consulta
+            precios o resuelve cualquier duda.
+          </p>
+          <!-- REEMPLAZA el número de teléfono real (formato: 52 + 10 dígitos) -->
+          <a
+            href="https://wa.me/524441234567"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="boton boton--whatsapp"
+          >
+            <i class="fa-brands fa-whatsapp"></i>
+            Chatear por WhatsApp
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Barra de garantías -->
+      <div class="contacto__garantias">
+        <div class="garantia">
+          <span class="garantia__icono">✨</span>
+          <span class="garantia__texto">Examen sin costo con compra de lentes</span>
+        </div>
+        <div class="garantia">
+          <span class="garantia__icono">🚚</span>
+          <span class="garantia__texto">Entrega en 24 horas</span>
+        </div>
+        <div class="garantia">
+          <span class="garantia__icono">🔒</span>
+          <span class="garantia__texto">Garantía de 1 año</span>
+        </div>
+        <div class="garantia">
+          <span class="garantia__icono">💳</span>
+          <span class="garantia__texto">Hasta 12 meses sin intereses</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SECCIÓN: UBICACIÓN (Mapa)
+       ============================================================ -->
+  <section class="ubicacion">
+    <div class="ubicacion__contenedor">
+
+      <div class="ubicacion__encabezado">
+        <span class="insignia insignia--morada">
+          <i class="fa-solid fa-location-dot"></i>
+          Visítanos
+        </span>
+        <h2 class="ubicacion__titulo">Encuéntranos fácilmente</h2>
+      </div>
+
+      <!--
+        REEMPLAZA el src del iframe con tu embed de Google Maps real.
+        Para obtenerlo: Google Maps → tu ubicación → Compartir → Insertar mapa → copia el src del iframe.
+      -->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3702.8!2d-100.9855!3d22.1565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDA5JzIzLjQiTiAxMDDCsDU5JzA3LjgiVw!5e0!3m2!1ses!2smx!4v1234567890"
+        class="ubicacion__iframe"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Ubicación El Hada de los Lentes"
+      ></iframe>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       PIE DE PÁGINA
+       ============================================================ -->
+  <footer class="pie">
+    <div class="pie__contenedor">
+
+      <div class="pie__logo">
+        <div class="navegacion__logo-icono">
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <div>
+          <span class="pie__nombre">El Hada de los Lentes</span>
+          <span class="pie__eslogan">Tu visión, nuestra magia</span>
+        </div>
+      </div>
+
+      <p class="pie__derechos">
+        &copy; 2024 El Hada de los Lentes. Todos los derechos reservados.
+      </p>
+
+    </div>
+  </footer>
+
+
+  <!-- ===== JavaScript ===== -->
+  <script src="js/principal.js"></script>
+
+</body>
+</html>

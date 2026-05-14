@@ -1,0 +1,154 @@
+/* ================================================================
+   SECCIÓN: servicios
+   Cuadrícula de 6 tarjetas con los servicios principales.
+
+   BEM:
+     Bloque:     .servicios
+     Elementos:  .servicios__contenedor
+                 .servicios__encabezado
+                 .servicios__titulo
+                 .servicios__descripcion
+                 .servicios__cuadricula
+
+     Bloque:     .tarjeta-servicio
+     Elementos:  .tarjeta-servicio__encabezado
+                 .tarjeta-servicio__icono
+                 .tarjeta-servicio__nombre
+                 .tarjeta-servicio__descripcion
+                 .tarjeta-servicio__enlace
+   Modificadores:
+                 .tarjeta-servicio__icono--amarillo
+                 .tarjeta-servicio__icono--verde
+                 .tarjeta-servicio__icono--morado
+   ================================================================ */
+
+.servicios {
+  background-color: var(--color-fondo-pagina);
+  padding: var(--espacio-20) 0 var(--espacio-24);
+}
+
+/* --- Encabezado centrado de la sección --- */
+.servicios__contenedor {
+  max-width: var(--ancho-maximo);
+  margin: 0 auto;
+  padding: 0 var(--padding-horizontal);
+}
+
+.servicios__encabezado {
+  text-align: center;
+  margin-bottom: var(--espacio-12);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--espacio-4);
+}
+
+.servicios__titulo {
+  font-size: var(--tamaño-4xl);
+  font-weight: 800;
+  color: var(--color-texto-oscuro);
+}
+
+.servicios__descripcion {
+  font-size: var(--tamaño-base);
+  color: var(--color-texto-medio);
+  max-width: 560px;
+  line-height: 1.7;
+}
+
+/* --- Cuadrícula de 3 columnas --- */
+.servicios__cuadricula {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--espacio-5);
+}
+
+/* ========================================================
+   TARJETA DE SERVICIO
+   ======================================================== */
+.tarjeta-servicio {
+  background-color: var(--color-fondo-blanco);
+  border-radius: var(--radio-2xl);
+  padding: var(--espacio-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-3);
+  border: 1px solid var(--color-borde);
+  transition:
+    box-shadow var(--transicion-media),
+    transform var(--transicion-media);
+}
+
+.tarjeta-servicio:hover {
+  box-shadow: var(--sombra-lg);
+  transform: translateY(-4px);
+}
+
+/* --- Fila superior: ícono + badge opcional --- */
+.tarjeta-servicio__encabezado {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: var(--espacio-2);
+}
+
+/* --- Ícono base (fondo lavanda) --- */
+.tarjeta-servicio__icono {
+  width: 48px;
+  height: 48px;
+  background-color: var(--color-morado-claro);
+  color: var(--color-morado);
+  border-radius: var(--radio-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--tamaño-xl);
+}
+
+/* Modificadores de color del ícono */
+.tarjeta-servicio__icono--amarillo {
+  background-color: var(--color-naranja-suave);
+  color: var(--color-naranja);
+}
+
+.tarjeta-servicio__icono--verde {
+  background-color: var(--color-fondo-tarjeta-verde);
+  color: #10B981;
+}
+
+.tarjeta-servicio__icono--morado {
+  background-color: var(--color-fondo-tarjeta-lila);
+  color: var(--color-morado-medio);
+}
+
+/* --- Nombre del servicio --- */
+.tarjeta-servicio__nombre {
+  font-size: var(--tamaño-lg);
+  font-weight: 700;
+  color: var(--color-texto-oscuro);
+}
+
+/* --- Descripción --- */
+.tarjeta-servicio__descripcion {
+  font-size: var(--tamaño-sm);
+  color: var(--color-texto-medio);
+  line-height: 1.65;
+  flex: 1;
+}
+
+/* --- Enlace "Saber más →" --- */
+.tarjeta-servicio__enlace {
+  font-size: var(--tamaño-sm);
+  font-weight: 600;
+  color: var(--color-morado);
+  margin-top: var(--espacio-2);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--espacio-1);
+  transition: gap var(--transicion-rapida), color var(--transicion-rapida);
+}
+
+.tarjeta-servicio__enlace:hover {
+  color: var(--color-morado-oscuro);
+  gap: var(--espacio-2);
+}

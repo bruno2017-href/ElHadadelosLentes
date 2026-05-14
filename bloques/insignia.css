@@ -1,0 +1,84 @@
+/* ================================================================
+   COMPONENTE: insignia
+   Pastillas de etiqueta que aparecen sobre los títulos de sección.
+
+   BEM:
+     Bloque:      .insignia
+     Modificadores:
+       .insignia--oscura      → Fondo semitransparente oscuro (hero)
+       .insignia--rosa        → Borde rosa, texto rosa
+       .insignia--morada      → Fondo lavanda, texto morado
+       .insignia--amarilla    → Fondo amarillo suave, texto naranja
+       .insignia--recomendado → Pequeña, texto morado (en tarjetas)
+       .insignia--nuevo       → Pequeña, texto naranja (en tarjetas)
+       .insignia--ahorro      → Pequeña, texto verde (en tarjetas)
+   ================================================================ */
+
+/* --- Base --- */
+.insignia {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--espacio-2);
+  padding: var(--espacio-2) var(--espacio-4);
+  border-radius: var(--radio-completo);
+  font-size: var(--tamaño-sm);
+  font-weight: 500;
+  line-height: 1;
+}
+
+/* --- Oscura: para el hero sobre fondo morado --- */
+.insignia--oscura {
+  background-color: rgba(0, 0, 0, 0.25);
+  color: var(--color-texto-blanco);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* --- Rosa: borde y texto rosa --- */
+.insignia--rosa {
+  background-color: var(--color-rosa-suave);
+  color: var(--color-rosa);
+  border: 1px solid rgba(219, 39, 119, 0.2);
+}
+
+/* --- Morada: fondo lavanda, texto morado --- */
+.insignia--morada {
+  background-color: var(--color-morado-claro);
+  color: var(--color-morado);
+  border: 1px solid rgba(124, 58, 237, 0.15);
+}
+
+/* --- Amarilla: fondo naranja suave, texto naranja --- */
+.insignia--amarilla {
+  background-color: var(--color-naranja-suave);
+  color: var(--color-naranja-oscuro);
+  border: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+/* ---- Insignias pequeñas para tarjetas de servicios ---- */
+
+.insignia--recomendado {
+  background-color: transparent;
+  color: var(--color-morado);
+  border: none;
+  font-size: var(--tamaño-xs);
+  font-weight: 600;
+  padding: var(--espacio-1) 0;
+}
+
+.insignia--nuevo {
+  background-color: transparent;
+  color: var(--color-naranja);
+  border: none;
+  font-size: var(--tamaño-xs);
+  font-weight: 600;
+  padding: var(--espacio-1) 0;
+}
+
+.insignia--ahorro {
+  background-color: transparent;
+  color: #10B981;
+  border: none;
+  font-size: var(--tamaño-xs);
+  font-weight: 600;
+  padding: var(--espacio-1) 0;
+}

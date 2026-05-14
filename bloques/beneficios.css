@@ -1,0 +1,155 @@
+/* ================================================================
+   SECCIÓN: beneficios
+   Cuadrícula de 6 tarjetas de colores pastel.
+
+   BEM:
+     Bloque:     .beneficios
+     Elementos:  .beneficios__contenedor
+                 .beneficios__encabezado
+                 .beneficios__titulo
+                 .beneficios__descripcion
+                 .beneficios__cuadricula
+
+     Bloque:     .tarjeta-beneficio
+     Elementos:  .tarjeta-beneficio__icono
+                 .tarjeta-beneficio__titulo
+                 .tarjeta-beneficio__descripcion
+   Modificadores de color:
+                 .tarjeta-beneficio--rosa
+                 .tarjeta-beneficio--lavanda
+                 .tarjeta-beneficio--verde
+                 .tarjeta-beneficio--amarillo
+                 .tarjeta-beneficio--azul
+                 .tarjeta-beneficio--lila
+   ================================================================ */
+
+.beneficios {
+  background-color: var(--color-fondo-pagina);
+  padding: var(--espacio-20) 0 var(--espacio-24);
+}
+
+.beneficios__contenedor {
+  max-width: var(--ancho-maximo);
+  margin: 0 auto;
+  padding: 0 var(--padding-horizontal);
+}
+
+/* --- Encabezado centrado --- */
+.beneficios__encabezado {
+  text-align: center;
+  margin-bottom: var(--espacio-12);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--espacio-4);
+}
+
+.beneficios__titulo {
+  font-size: var(--tamaño-4xl);
+  font-weight: 800;
+  color: var(--color-texto-oscuro);
+}
+
+.beneficios__descripcion {
+  font-size: var(--tamaño-base);
+  color: var(--color-texto-medio);
+  max-width: 540px;
+  line-height: 1.7;
+}
+
+/* --- Cuadrícula de 3 columnas --- */
+.beneficios__cuadricula {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--espacio-5);
+}
+
+/* ========================================================
+   TARJETA DE BENEFICIO
+   ======================================================== */
+.tarjeta-beneficio {
+  border-radius: var(--radio-2xl);
+  padding: var(--espacio-8) var(--espacio-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-4);
+  transition:
+    box-shadow var(--transicion-media),
+    transform var(--transicion-media);
+}
+
+.tarjeta-beneficio:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--sombra-md);
+}
+
+/* --- Ícono flotante en caja blanca --- */
+.tarjeta-beneficio__icono {
+  width: 48px;
+  height: 48px;
+  background-color: var(--color-fondo-blanco);
+  border-radius: var(--radio-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--tamaño-xl);
+  box-shadow: var(--sombra-sm);
+}
+
+/* --- Título --- */
+.tarjeta-beneficio__titulo {
+  font-size: var(--tamaño-lg);
+  font-weight: 700;
+  color: var(--color-texto-oscuro);
+}
+
+/* --- Descripción --- */
+.tarjeta-beneficio__descripcion {
+  font-size: var(--tamaño-sm);
+  color: var(--color-texto-medio);
+  line-height: 1.65;
+}
+
+/* ---- Modificadores de color por tarjeta ---- */
+
+.tarjeta-beneficio--rosa {
+  background-color: var(--color-fondo-tarjeta-rosa);
+}
+.tarjeta-beneficio--rosa .tarjeta-beneficio__icono {
+  color: var(--color-icono-rosa);
+}
+
+.tarjeta-beneficio--lavanda {
+  background-color: var(--color-fondo-tarjeta-lavanda);
+}
+.tarjeta-beneficio--lavanda .tarjeta-beneficio__icono {
+  color: var(--color-icono-morado);
+}
+
+.tarjeta-beneficio--verde {
+  background-color: var(--color-fondo-tarjeta-verde);
+}
+.tarjeta-beneficio--verde .tarjeta-beneficio__icono {
+  color: var(--color-icono-verde);
+}
+
+.tarjeta-beneficio--amarillo {
+  background-color: var(--color-fondo-tarjeta-amarillo);
+}
+.tarjeta-beneficio--amarillo .tarjeta-beneficio__icono {
+  color: var(--color-icono-amarillo);
+}
+
+.tarjeta-beneficio--azul {
+  background-color: var(--color-fondo-tarjeta-azul);
+}
+.tarjeta-beneficio--azul .tarjeta-beneficio__icono {
+  color: var(--color-icono-azul);
+}
+
+.tarjeta-beneficio--lila {
+  background-color: var(--color-fondo-tarjeta-lila);
+}
+.tarjeta-beneficio--lila .tarjeta-beneficio__icono {
+  color: var(--color-icono-lila);
+}

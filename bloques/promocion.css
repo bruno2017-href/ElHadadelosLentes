@@ -1,0 +1,61 @@
+/* ================================================================
+   SECCIÓN: promocion (Banner CTA)
+   Banner de oferta especial con gradiente morado-rosa.
+
+   BEM:
+     Bloque:     .promocion
+     Elementos:  .promocion__contenedor
+                 .promocion__contenido
+                 .promocion__etiqueta
+                 .promocion__titulo
+                 .promocion__descripcion
+   ================================================================ */
+
+.promocion {
+  background-color: var(--color-fondo-pagina);
+  padding: var(--espacio-4) 0 var(--espacio-16);
+}
+
+.promocion__contenedor {
+  max-width: var(--ancho-maximo);
+  margin: 0 auto;
+  padding: 0 var(--padding-horizontal);
+}
+
+/* --- Banner con gradiente y bordes redondeados --- */
+.promocion__contenido {
+  background: var(--gradiente-banner);
+  border-radius: var(--radio-2xl);
+  padding: var(--espacio-12) var(--espacio-8);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--espacio-5);
+}
+
+/* --- Etiqueta pequeña naranja --- */
+.promocion__etiqueta {
+  font-size: var(--tamaño-sm);
+  font-weight: 600;
+  color: var(--color-naranja);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* --- Título grande blanco --- */
+.promocion__titulo {
+  font-size: var(--tamaño-4xl);
+  font-weight: 800;
+  color: var(--color-texto-blanco);
+  max-width: 700px;
+  line-height: 1.2;
+}
+
+/* --- Descripción blanca translúcida --- */
+.promocion__descripcion {
+  font-size: var(--tamaño-base);
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 520px;
+  line-height: 1.65;
+}

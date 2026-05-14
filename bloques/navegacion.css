@@ -1,0 +1,131 @@
+/* ================================================================
+   COMPONENTE: navegacion
+   Barra de navegación fija en la parte superior.
+
+   BEM:
+     Bloque:     .navegacion
+     Elementos:  .navegacion__contenedor
+                 .navegacion__logo
+                 .navegacion__logo-icono
+                 .navegacion__logo-nombre
+                 .navegacion__logo-subtitulo
+                 .navegacion__menu
+                 .navegacion__enlace
+                 .navegacion__hamburguesa
+   ================================================================ */
+
+.navegacion {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: var(--gradiente-hero);
+  padding: var(--espacio-4) 0;
+  transition: box-shadow var(--transicion-media);
+}
+
+/* Sombra que se agrega al hacer scroll (controlado por JS) */
+.navegacion--con-sombra {
+  box-shadow: 0 4px 20px rgba(76, 29, 149, 0.4);
+}
+
+/* --- Contenedor interno --- */
+.navegacion__contenedor {
+  max-width: var(--ancho-maximo);
+  margin: 0 auto;
+  padding: 0 var(--padding-horizontal);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--espacio-6);
+}
+
+/* --- Logo --- */
+.navegacion__logo {
+  display: flex;
+  align-items: center;
+  gap: var(--espacio-3);
+  flex-shrink: 0;
+}
+
+.navegacion__logo-icono {
+  width: 42px;
+  height: 42px;
+  background-color: var(--color-naranja);
+  border-radius: var(--radio-completo);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-texto-blanco);
+  font-size: var(--tamaño-lg);
+}
+
+.navegacion__logo-nombre {
+  display: block;
+  font-size: var(--tamaño-base);
+  font-weight: 700;
+  color: var(--color-texto-blanco);
+  line-height: 1.2;
+}
+
+.navegacion__logo-subtitulo {
+  display: block;
+  font-size: var(--tamaño-xs);
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* --- Menú de enlaces --- */
+.navegacion__menu {
+  display: flex;
+  align-items: center;
+  gap: var(--espacio-8);
+}
+
+.navegacion__enlace {
+  font-size: var(--tamaño-sm);
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+  position: relative;
+  padding-bottom: var(--espacio-1);
+}
+
+.navegacion__enlace::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-naranja);
+  transition: width var(--transicion-media);
+}
+
+.navegacion__enlace:hover {
+  color: var(--color-texto-blanco);
+}
+
+.navegacion__enlace:hover::after {
+  width: 100%;
+}
+
+/* --- Botón hamburguesa (visible solo en móvil - se agrega en media queries) --- */
+.navegacion__hamburguesa {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: var(--espacio-2);
+}
+
+.navegacion__hamburguesa span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: var(--color-texto-blanco);
+  border-radius: var(--radio-completo);
+  transition: var(--transicion-media);
+}

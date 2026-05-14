@@ -1,0 +1,193 @@
+/* ================================================================
+   SECCIÓN: inicio (Hero)
+   Primera sección de la página con gradiente morado-rosa.
+
+   BEM:
+     Bloque:     .inicio
+     Elementos:  .inicio__contenedor
+                 .inicio__contenido
+                 .inicio__titulo
+                 .inicio__titulo--acento
+                 .inicio__eslogan
+                 .inicio__descripcion
+                 .inicio__acciones
+                 .inicio__estadisticas
+                 .inicio__imagen-contenedor
+                 .inicio__imagen
+                 .inicio__imagen-badge
+                 .inicio__ola
+                 .estadistica
+                 .estadistica__numero
+                 .estadistica__etiqueta
+   ================================================================ */
+
+.inicio {
+  background: var(--gradiente-hero);
+  padding-top: calc(80px + var(--espacio-16));  /* espacio para la nav fija */
+  padding-bottom: var(--espacio-6);
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Círculo decorativo de fondo */
+.inicio::before {
+  content: '';
+  position: absolute;
+  top: -20%;
+  right: -10%;
+  width: 600px;
+  height: 600px;
+  border-radius: var(--radio-completo);
+  background: rgba(255, 255, 255, 0.04);
+  pointer-events: none;
+}
+
+/* --- Contenedor en dos columnas --- */
+.inicio__contenedor {
+  max-width: var(--ancho-maximo);
+  margin: 0 auto;
+  padding: 0 var(--padding-horizontal);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: var(--espacio-12);
+}
+
+/* ---- Columna izquierda: texto ---- */
+.inicio__contenido {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-5);
+}
+
+/* --- Título principal --- */
+.inicio__titulo {
+  font-size: var(--tamaño-6xl);
+  font-weight: 800;
+  color: var(--color-texto-blanco);
+  line-height: 1.1;
+  margin-top: var(--espacio-2);
+}
+
+.inicio__titulo--acento {
+  color: var(--color-naranja);
+  display: block;
+}
+
+/* --- Eslogan en itálica --- */
+.inicio__eslogan {
+  font-size: var(--tamaño-xl);
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 400;
+}
+
+/* --- Párrafo descriptivo --- */
+.inicio__descripcion {
+  font-size: var(--tamaño-base);
+  color: rgba(255, 255, 255, 0.82);
+  max-width: 480px;
+  line-height: 1.7;
+}
+
+/* --- Grupo de botones --- */
+.inicio__acciones {
+  display: flex;
+  align-items: center;
+  gap: var(--espacio-4);
+  flex-wrap: wrap;
+}
+
+/* --- Estadísticas numéricas --- */
+.inicio__estadisticas {
+  display: flex;
+  gap: var(--espacio-10);
+  margin-top: var(--espacio-4);
+  padding-top: var(--espacio-6);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.estadistica {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-1);
+}
+
+.estadistica__numero {
+  font-size: var(--tamaño-3xl);
+  font-weight: 800;
+  color: var(--color-texto-blanco);
+  line-height: 1;
+}
+
+.estadistica__etiqueta {
+  font-size: var(--tamaño-xs);
+  color: rgba(255, 255, 255, 0.72);
+  font-weight: 400;
+}
+
+/* ---- Columna derecha: imagen ---- */
+.inicio__imagen-contenedor {
+  position: relative;
+}
+
+.inicio__imagen {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  border-radius: var(--radio-2xl);
+  box-shadow: var(--sombra-xl);
+}
+
+/* Badge flotante sobre la imagen */
+.inicio__imagen-badge {
+  position: absolute;
+  bottom: var(--espacio-5);
+  left: var(--espacio-5);
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(8px);
+  border-radius: var(--radio-xl);
+  padding: var(--espacio-3) var(--espacio-4);
+  display: flex;
+  align-items: center;
+  gap: var(--espacio-3);
+  color: var(--color-texto-blanco);
+}
+
+.inicio__imagen-badge i {
+  color: var(--color-naranja);
+  font-size: var(--tamaño-lg);
+  flex-shrink: 0;
+}
+
+.inicio__imagen-badge strong {
+  display: block;
+  font-size: var(--tamaño-sm);
+  font-weight: 600;
+}
+
+.inicio__imagen-badge span {
+  display: block;
+  font-size: var(--tamaño-xs);
+  color: var(--color-naranja);
+  font-weight: 500;
+}
+
+/* --- Ola de transición al siguiente bloque --- */
+.inicio__ola {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  line-height: 0;
+  pointer-events: none;
+}
+
+.inicio__ola svg {
+  width: 100%;
+  height: 80px;
+}

@@ -1,0 +1,115 @@
+/* ================================================================
+   VARIABLES GLOBALES — El Hada de los Lentes
+   Modifica estos valores para cambiar la apariencia de toda
+   la página desde un solo lugar.
+   ================================================================ */
+
+:root {
+
+  /* ---- COLORES PRINCIPALES ---- */
+  --color-morado-oscuro:   #4C1D95;
+  --color-morado:          #7C3AED;
+  --color-morado-medio:    #A855F7;
+  --color-morado-claro:    #EDE9FE;
+  --color-morado-suave:    #F5F3FF;
+
+  --color-rosa:            #DB2777;
+  --color-rosa-suave:      #FDF2F8;
+  --color-magenta:         #C026D3;
+
+  --color-naranja:         #F59E0B;
+  --color-naranja-oscuro:  #D97706;
+  --color-naranja-suave:   #FEF3C7;
+
+  /* ---- COLORES DE FONDO PARA TARJETAS DE BENEFICIOS ---- */
+  --color-fondo-tarjeta-rosa:    #FFF0F6;
+  --color-fondo-tarjeta-lavanda: #F0EEFF;
+  --color-fondo-tarjeta-verde:   #ECFDF5;
+  --color-fondo-tarjeta-amarillo:#FFFBEB;
+  --color-fondo-tarjeta-azul:    #EFF6FF;
+  --color-fondo-tarjeta-lila:    #F3E8FF;
+
+  /* ---- COLORES DE ÍCONOS BENEFICIOS ---- */
+  --color-icono-rosa:    #EC4899;
+  --color-icono-morado:  #8B5CF6;
+  --color-icono-verde:   #10B981;
+  --color-icono-amarillo:#F59E0B;
+  --color-icono-azul:    #3B82F6;
+  --color-icono-lila:    #A78BFA;
+
+  /* ---- COLORES DE TEXTO ---- */
+  --color-texto-oscuro:  #1E1B4B;
+  --color-texto-medio:   #4B5563;
+  --color-texto-claro:   #9CA3AF;
+  --color-texto-blanco:  #FFFFFF;
+
+  /* ---- GRADIENTES ---- */
+  --gradiente-hero: linear-gradient(
+    135deg,
+    #4C1D95 0%,
+    #6D28D9 20%,
+    #7C3AED 40%,
+    #A21CAF 65%,
+    #BE185D 85%,
+    #DB2777 100%
+  );
+  --gradiente-banner: linear-gradient(135deg, #5B21B6 0%, #9333EA 50%, #BE185D 100%);
+  --gradiente-accion-morada: linear-gradient(135deg, #4C1D95 0%, #7C3AED 100%);
+  --gradiente-accion-rosa:   linear-gradient(135deg, #9D174D 0%, #C026D3 100%);
+
+  /* ---- FONDOS ---- */
+  --color-fondo-pagina:  #F5F3FF;
+  --color-fondo-blanco:  #FFFFFF;
+  --color-borde:         #E5E7EB;
+
+  /* ---- TIPOGRAFÍA ---- */
+  --fuente-principal: 'Poppins', sans-serif;
+
+  --tamaño-xs:   0.75rem;    /* 12px */
+  --tamaño-sm:   0.875rem;   /* 14px */
+  --tamaño-base: 1rem;       /* 16px */
+  --tamaño-lg:   1.125rem;   /* 18px */
+  --tamaño-xl:   1.25rem;    /* 20px */
+  --tamaño-2xl:  1.5rem;     /* 24px */
+  --tamaño-3xl:  1.875rem;   /* 30px */
+  --tamaño-4xl:  2.25rem;    /* 36px */
+  --tamaño-5xl:  3rem;       /* 48px */
+  --tamaño-6xl:  3.75rem;    /* 60px */
+
+  /* ---- ESPACIADOS ---- */
+  --espacio-1:  0.25rem;   /*  4px */
+  --espacio-2:  0.5rem;    /*  8px */
+  --espacio-3:  0.75rem;   /* 12px */
+  --espacio-4:  1rem;      /* 16px */
+  --espacio-5:  1.25rem;   /* 20px */
+  --espacio-6:  1.5rem;    /* 24px */
+  --espacio-8:  2rem;      /* 32px */
+  --espacio-10: 2.5rem;    /* 40px */
+  --espacio-12: 3rem;      /* 48px */
+  --espacio-16: 4rem;      /* 64px */
+  --espacio-20: 5rem;      /* 80px */
+  --espacio-24: 6rem;      /* 96px */
+
+  /* ---- BORDES REDONDEADOS ---- */
+  --radio-sm:       0.375rem;  /*  6px */
+  --radio-md:       0.5rem;    /*  8px */
+  --radio-lg:       0.75rem;   /* 12px */
+  --radio-xl:       1rem;      /* 16px */
+  --radio-2xl:      1.5rem;    /* 24px */
+  --radio-completo: 9999px;
+
+  /* ---- SOMBRAS ---- */
+  --sombra-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
+  --sombra-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --sombra-lg: 0 10px 24px rgba(0, 0, 0, 0.10);
+  --sombra-xl: 0 20px 40px rgba(0, 0, 0, 0.13);
+
+  /* ---- TRANSICIONES ---- */
+  --transicion-rapida: 0.2s ease;
+  --transicion-media:  0.3s ease;
+  --transicion-lenta:  0.5s ease;
+
+  /* ---- CONTENEDOR ---- */
+  --ancho-maximo:       1280px;
+  --padding-horizontal: var(--espacio-6);
+}

@@ -1,0 +1,111 @@
+/* ================================================================
+   COMPONENTE: boton
+   Todos los botones de la página se definen aquí.
+
+   BEM:
+     Bloque:      .boton
+     Modificadores:
+       .boton--primario    → Amarillo/naranja (CTA principal)
+       .boton--secundario  → Transparente con borde blanco
+       .boton--cta-nav     → Botón en la navegación
+       .boton--catalogo    → Botón "Ver catálogo"
+       .boton--whatsapp    → Botón verde WhatsApp
+   ================================================================ */
+
+/* --- Base común de todos los botones --- */
+.boton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--espacio-2);
+  padding: var(--espacio-3) var(--espacio-6);
+  border-radius: var(--radio-completo);
+  font-family: var(--fuente-principal);
+  font-size: var(--tamaño-base);
+  font-weight: 600;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition:
+    background-color var(--transicion-rapida),
+    transform var(--transicion-rapida),
+    box-shadow var(--transicion-rapida),
+    border-color var(--transicion-rapida);
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.boton:hover {
+  transform: translateY(-2px);
+}
+
+.boton:active {
+  transform: translateY(0);
+}
+
+/* --- Primario: fondo naranja/amarillo, texto oscuro --- */
+.boton--primario {
+  background-color: var(--color-naranja);
+  color: var(--color-texto-oscuro);
+  border-color: var(--color-naranja);
+}
+
+.boton--primario:hover {
+  background-color: var(--color-naranja-oscuro);
+  border-color: var(--color-naranja-oscuro);
+  box-shadow: 0 8px 20px rgba(245, 158, 11, 0.35);
+}
+
+/* --- Secundario: borde blanco translúcido, texto blanco --- */
+.boton--secundario {
+  background-color: transparent;
+  color: var(--color-texto-blanco);
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.boton--secundario:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: var(--color-texto-blanco);
+}
+
+/* --- CTA en la navegación: compacto, naranja --- */
+.boton--cta-nav {
+  background-color: var(--color-naranja);
+  color: var(--color-texto-oscuro);
+  border-color: var(--color-naranja);
+  padding: var(--espacio-2) var(--espacio-5);
+  font-size: var(--tamaño-sm);
+  font-weight: 700;
+}
+
+.boton--cta-nav:hover {
+  background-color: var(--color-naranja-oscuro);
+  border-color: var(--color-naranja-oscuro);
+  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.4);
+}
+
+/* --- Catálogo: fondo naranja sobre tarjeta morada --- */
+.boton--catalogo {
+  background-color: var(--color-naranja);
+  color: var(--color-texto-oscuro);
+  border-color: var(--color-naranja);
+  font-weight: 700;
+}
+
+.boton--catalogo:hover {
+  background-color: var(--color-naranja-oscuro);
+  box-shadow: 0 8px 20px rgba(245, 158, 11, 0.4);
+}
+
+/* --- WhatsApp: fondo verde --- */
+.boton--whatsapp {
+  background-color: #25D366;
+  color: var(--color-texto-blanco);
+  border-color: #25D366;
+  font-weight: 700;
+}
+
+.boton--whatsapp:hover {
+  background-color: #1DA851;
+  border-color: #1DA851;
+  box-shadow: 0 8px 20px rgba(37, 211, 102, 0.35);
+}

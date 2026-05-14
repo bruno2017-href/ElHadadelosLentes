@@ -1,0 +1,188 @@
+/* ================================================================
+   SECCIÓN: testimonios
+   Sección de reseñas con cuadrícula de 3×2 tarjetas.
+
+   BEM:
+     Bloque:     .testimonios
+     Elementos:  .testimonios__contenedor
+                 .testimonios__encabezado
+                 .testimonios__titulo
+                 .testimonios__descripcion
+                 .testimonios__calificacion
+                 .testimonios__estrellas
+                 .testimonios__puntuacion
+                 .testimonios__cuadricula
+
+     Bloque:     .tarjeta-testimonio
+     Elementos:  .tarjeta-testimonio__encabezado
+                 .tarjeta-testimonio__avatar
+                 .tarjeta-testimonio__info
+                 .tarjeta-testimonio__nombre
+                 .tarjeta-testimonio__profesion
+                 .tarjeta-testimonio__comilla
+                 .tarjeta-testimonio__estrellas
+                 .tarjeta-testimonio__texto
+   Modificadores de avatar:
+                 .tarjeta-testimonio__avatar--inicial
+                 .tarjeta-testimonio__avatar--morado
+                 .tarjeta-testimonio__avatar--rojo
+                 .tarjeta-testimonio__avatar--verde
+                 .tarjeta-testimonio__avatar--naranja
+   ================================================================ */
+
+.testimonios {
+  background-color: var(--color-fondo-blanco);
+  padding: var(--espacio-20) 0 var(--espacio-24);
+}
+
+.testimonios__contenedor {
+  max-width: var(--ancho-maximo);
+  margin: 0 auto;
+  padding: 0 var(--padding-horizontal);
+}
+
+/* --- Encabezado centrado --- */
+.testimonios__encabezado {
+  text-align: center;
+  margin-bottom: var(--espacio-12);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--espacio-4);
+}
+
+.testimonios__titulo {
+  font-size: var(--tamaño-4xl);
+  font-weight: 800;
+  color: var(--color-texto-oscuro);
+}
+
+.testimonios__descripcion {
+  font-size: var(--tamaño-base);
+  color: var(--color-texto-medio);
+}
+
+/* --- Calificación global con estrellas --- */
+.testimonios__calificacion {
+  display: flex;
+  align-items: center;
+  gap: var(--espacio-3);
+  background-color: var(--color-naranja-suave);
+  padding: var(--espacio-3) var(--espacio-5);
+  border-radius: var(--radio-completo);
+  margin-top: var(--espacio-2);
+}
+
+.testimonios__estrellas {
+  display: flex;
+  gap: var(--espacio-1);
+  color: var(--color-naranja);
+  font-size: var(--tamaño-lg);
+}
+
+.testimonios__puntuacion {
+  font-size: var(--tamaño-sm);
+  font-weight: 600;
+  color: var(--color-texto-oscuro);
+}
+
+/* --- Cuadrícula de 3 columnas --- */
+.testimonios__cuadricula {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--espacio-5);
+}
+
+/* ========================================================
+   TARJETA DE TESTIMONIO
+   ======================================================== */
+.tarjeta-testimonio {
+  background-color: var(--color-fondo-blanco);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio-2xl);
+  padding: var(--espacio-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-4);
+  transition:
+    box-shadow var(--transicion-media),
+    transform var(--transicion-media);
+}
+
+.tarjeta-testimonio:hover {
+  box-shadow: var(--sombra-lg);
+  transform: translateY(-3px);
+}
+
+/* --- Fila superior: avatar + nombre + comilla --- */
+.tarjeta-testimonio__encabezado {
+  display: flex;
+  align-items: center;
+  gap: var(--espacio-3);
+}
+
+/* Avatar con foto */
+.tarjeta-testimonio__avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radio-completo);
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* Avatar con inicial (cuando no hay foto) */
+.tarjeta-testimonio__avatar--inicial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--tamaño-xl);
+  font-weight: 700;
+  color: var(--color-texto-blanco);
+  flex-shrink: 0;
+}
+
+.tarjeta-testimonio__avatar--morado  { background-color: #7C3AED; }
+.tarjeta-testimonio__avatar--rojo    { background-color: #EF4444; }
+.tarjeta-testimonio__avatar--verde   { background-color: #10B981; }
+.tarjeta-testimonio__avatar--naranja { background-color: #F59E0B; }
+
+/* Info del cliente */
+.tarjeta-testimonio__info {
+  flex: 1;
+}
+
+.tarjeta-testimonio__nombre {
+  display: block;
+  font-size: var(--tamaño-sm);
+  font-weight: 700;
+  color: var(--color-texto-oscuro);
+}
+
+.tarjeta-testimonio__profesion {
+  display: block;
+  font-size: var(--tamaño-xs);
+  color: var(--color-texto-claro);
+}
+
+/* Comilla decorativa */
+.tarjeta-testimonio__comilla {
+  font-size: var(--tamaño-3xl);
+  color: var(--color-borde);
+  line-height: 1;
+  align-self: flex-start;
+}
+
+/* --- Estrellas del cliente --- */
+.tarjeta-testimonio__estrellas {
+  display: flex;
+  gap: var(--espacio-1);
+  color: var(--color-naranja);
+  font-size: var(--tamaño-base);
+}
+
+/* --- Texto del testimonio --- */
+.tarjeta-testimonio__texto {
+  font-size: var(--tamaño-sm);
+  color: var(--color-texto-medio);
+  line-height: 1.7;
+}
