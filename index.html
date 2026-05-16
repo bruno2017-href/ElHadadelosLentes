@@ -3,14 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="descripcion" content="Distribucion al por menor de lentes oftalmicos graduados en San Luis Potosí, México.">
-  <meta name="autor" content="Bruno Montes">
+  <meta name="descripcion" content="Combinamos salud visual, estilo moderno y atención personalizada. Distribucion al por menor de lentes oftalmicos graduados en San Luis Potosí, México. Agenda tu examen visual en El Hada de los Lentes."/>
+  <meta name="author" content="Bruno Montes">
   <meta name="keywords" content="lentes, óptica, salud visual, armazones, examen visual, San Luis Potosí" />
-  <link rel="stylesheet" href="./paginas/index.css" />
   <title>El Hada de los Lentes | Óptica & Estilo Visual</title>
-  <meta name="description" content="Combinamos salud visual, estilo moderno y atención personalizada. Agenda tu examen visual en El Hada de los Lentes." />
-
-  <!-- ===== FUENTES ===== -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&display=swap" rel="stylesheet" />
@@ -21,20 +17,21 @@
   <!-- ===== CSS — Variables y Base ===== -->
   <link rel="stylesheet" href="css/variables.css" />
   <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="./paginas/index.css"/>
 
   <!-- ===== CSS — Componentes reutilizables ===== -->
   <link rel="stylesheet" href="css/componentes/navegacion.css" />
   <link rel="stylesheet" href="css/componentes/boton.css" />
   <link rel="stylesheet" href="css/componentes/insignia.css" />
 
-  <!-- ===== CSS — Secciones =====
+   ===== CSS — Secciones =====
   <link rel="stylesheet" href="css/bloques/inicio.css" />
   <link rel="stylesheet" href="css/bloques/propuesta.css" />
   <link rel="stylesheet" href="css/bloques/servicios.css" />
   <link rel="stylesheet" href="css/bloques/beneficios.css" />
   <link rel="stylesheet" href="css/bloques/promocion.css" />
   <link rel="stylesheet" href="css/bloques/testimonios.css" />
-  <link rel="stylesheet" href="css/bloques/contacto-y-pie.css" /> -->
+  <link rel="stylesheet" href="css/bloques/contacto-y-pie.css" />
 
 </head>
 
@@ -48,13 +45,13 @@
 
       <!-- Logo -->
       <a href="#inicio" class="navegacion__logo">
-        <div class="navegacion__logo-icono">
-          <i class="fa-solid fa-star"></i>
-        </div>
-        <div>
-          <span class="navegacion__logo-nombre">El Hada</span>
-          <span class="navegacion__logo-subtitulo">de los Lentes</span>
-        </div>
+      <div class="navegacion__logo-icono">
+      <img src="./imagenes/logo_hada.jpg" alt="Logo El Hada de los Lentes" style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover;">
+      </div>
+      <div>
+      <span class="navegacion__logo-nombre">El Hada</span>
+      <span class="navegacion__logo-subtitulo">de los Lentes</span>
+      </div>
       </a>
 
       <!-- Menú de navegación -->
@@ -140,124 +137,33 @@
         </div>
       </div>
 
-      <!-- Columna derecha: imagen -->
-      <div class="inicio__imagen-contenedor">
-        <!--
-          REEMPLAZA el src con la ruta de tu imagen real.
-          Tamaño recomendado: 700×480 px, orientación horizontal.
-        -->
-        <img
-          src="imagenes/armazones-hero.jpg"
-          alt="Colección de armazones El Hada de los Lentes"
-          class="inicio__imagen"
-        />
+     <div class="inicio__imagen-contenedor">
+
+        <div class="hero-carrusel">
+          <div class="hero-carrusel__pantalla hero-carrusel__pantalla--activa">
+            <img src="imagenes/armazones-hero-uno.png" alt="Promoción lentes completos" class="inicio__imagen" />
+          </div>
+          <div class="hero-carrusel__pantalla">
+            <img src="imagenes/armazones-hero-dos.png" alt="Estilo óptico moderno" class="inicio__imagen" />
+          </div>
+        </div>
+
         <div class="inicio__imagen-badge">
           <i class="fa-solid fa-sparkles"></i>
           <div>
             <strong>Nueva colección disponible</strong>
-            <span>Armazones para todos los estilos</span>
+            <span>+500 Modelos para todos los estilos</span>
           </div>
         </div>
-      </div>
 
-    </div>
-
-    <!-- Ola de transición hacia la siguiente sección -->
-    <div class="inicio__ola" aria-hidden="true">
+      </div> </div> <div class="inicio__ola" aria-hidden="true">
       <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#ffffff" />
+        <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="var(--color-fondo-blanco)" />
       </svg>
     </div>
+
   </section>
 
-
-  <!-- ============================================================
-       SECCIÓN: PROPUESTA DE VALOR
-       ============================================================ -->
-  <section class="propuesta" id="nosotros">
-    <div class="propuesta__contenedor">
-
-      <!-- Columna izquierda: galería de imágenes -->
-      <div class="propuesta__galeria">
-        <div class="propuesta__galeria-fila propuesta__galeria-fila--superior">
-          <!-- REEMPLAZA los src con tus imágenes reales -->
-          <img
-            src="imagenes/optica-estante.jpg"
-            alt="Estante con armazones de colores"
-            class="propuesta__foto propuesta__foto--izquierda"
-          />
-          <img
-            src="imagenes/examen-visual.jpg"
-            alt="Optometrista realizando examen visual"
-            class="propuesta__foto propuesta__foto--derecha"
-          />
-        </div>
-        <div class="propuesta__galeria-fila propuesta__galeria-fila--inferior">
-          <img
-            src="imagenes/mujer-lentes.jpg"
-            alt="Mujer usando lentes con estilo"
-            class="propuesta__foto propuesta__foto--ancha"
-          />
-          <!-- Badge flotante "15+ años" -->
-          <div class="propuesta__galeria-badge">
-            <span class="propuesta__galeria-numero">15+</span>
-            <span class="propuesta__galeria-texto">años cuidando tu visión</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Columna derecha: texto y puntos de valor -->
-      <div class="propuesta__contenido">
-        <span class="insignia insignia--rosa">
-          <i class="fa-solid fa-heart"></i>
-          Nuestra Propuesta de Valor
-        </span>
-
-        <h2 class="propuesta__titulo">
-          Donde la salud visual
-          <span class="propuesta__titulo--acento">se convierte en arte</span>
-        </h2>
-
-        <p class="propuesta__descripcion">
-          En El Hada de los Lentes entendemos que los lentes no son solo un
-          accesorio médico — son una extensión de tu personalidad. Por eso
-          combinamos una atención optométrica de primer nivel con asesoría
-          de moda personalizada.
-        </p>
-
-        <ul class="propuesta__lista">
-          <li class="propuesta__item">
-            <div class="propuesta__item-icono propuesta__item-icono--rosa">
-              <i class="fa-solid fa-heart"></i>
-            </div>
-            <div class="propuesta__item-texto">
-              <strong>Atención Personalizada</strong>
-              <p>Te acompañamos en cada paso: desde el diagnóstico hasta elegir el marco perfecto para tu rostro y estilo.</p>
-            </div>
-          </li>
-          <li class="propuesta__item">
-            <div class="propuesta__item-icono propuesta__item-icono--amarillo">
-              <i class="fa-solid fa-star"></i>
-            </div>
-            <div class="propuesta__item-texto">
-              <strong>Calidad Garantizada</strong>
-              <p>Trabajamos solo con marcas certificadas y materiales ópticos de alta tecnología.</p>
-            </div>
-          </li>
-          <li class="propuesta__item">
-            <div class="propuesta__item-icono propuesta__item-icono--morado">
-              <i class="fa-solid fa-bolt"></i>
-            </div>
-            <div class="propuesta__item-texto">
-              <strong>Estilo + Salud Visual</strong>
-              <p>Moda y funcionalidad en perfecta armonía. Tu visión, con tu propio toque único.</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-
-    </div>
-  </section>
 
 
   <!-- ============================================================

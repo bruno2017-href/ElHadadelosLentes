@@ -85,4 +85,24 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+/* ----------------------------------------------------------------
+     5. CARRUSEL AUTOMÁTICO REFINADO (Estilo Banner Lenso.mx)
+     Cambia las imágenes suavemente cada 4 segundos.
+     ---------------------------------------------------------------- */
+  const pantallas = document.querySelectorAll('.hero-carrusel__pantalla');
+  let pantallaActual = 0;
+
+  if (pantallas.length > 0) {
+    setInterval(function() {
+      // 1. Quitamos la clase activa de la imagen que se está viendo actualmente
+      pantallas[pantallaActual].classList.remove('hero-carrusel__pantalla--activa');
+
+      // 2. Calculamos de forma matemática la siguiente posición
+      pantallaActual = (pantallaActual + 1) % pantallas.length;
+
+      // 3. Encendemos la clase activa en la nueva imagen para que aparezca suavemente
+      pantallas[pantallaActual].classList.add('hero-carrusel__pantalla--activa');
+    }, 4000); // 4000 milisegundos = 4 segundos estables por imagen
+  }
+
 });
